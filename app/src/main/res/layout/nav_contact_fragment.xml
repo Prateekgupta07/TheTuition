@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_for_android_app_3"
+    tools:context=".nav_contact">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="532dp"
+        android:layout_height="255dp"
+        android:contentDescription="@string/tuition"
+        app:srcCompat="@drawable/annotation_2020_07_05_163132"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numberhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:padding="8sp"
+        android:paddingStart="8sp"
+        android:paddingLeft="8sp"
+        android:paddingTop="8sp"
+        android:paddingEnd="8sp"
+        android:paddingRight="8sp"
+        android:paddingBottom="8sp"
+        android:text="@string/no.head"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:padding="8sp"
+        android:text="@string/no"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toEndOf="@+id/numberhead"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/emailhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:text="@string/emailhead"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberhead"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="253dp"
+        android:layout_height="51dp"
+        android:padding="8sp"
+        android:text="@string/email"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <TextView
+        android:id="@+id/whatsapphead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="1dp"
+        android:padding="8sp"
+        android:text="@string/whatsapphead"
+        android:textColor="#FFEB3B"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailhead"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberhead"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/whatsappNo"
+        android:layout_width="146dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="1dp"
+        android:padding="8sp"
+        android:text="@string/WhatsappNo"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/whatsapphead"
+        app:layout_constraintTop_toBottomOf="@+id/no" />
+</androidx.constraintlayout.widget.ConstraintLayout>
