@@ -10,31 +10,46 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class practicepap7 extends AppCompatActivity {
+public class practicepap8 extends AppCompatActivity {
     ListView pdfListView;
     ArrayList<String> pdfName = new ArrayList<>();
     ListViewAdapter listViewAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_practicepap2);
+        setContentView(R.layout.activity_practicepap8);
         pdfListView = findViewById(R.id.myPDFList);
-        pdfName.add("Algebraic Expressions");
-        pdfName.add("Decimals");
-        pdfName.add("Exponents & Powers");
-        pdfName.add("Fractions");
-        pdfName.add("Integers");
-        pdfName.add("Rational Numbers");
+
+        pdfName.add("Algebraic Expressions level two");
+        pdfName.add("Algebraic Expressions  level one");
+        pdfName.add("Compound Interest");
+        pdfName.add("Cube & Cube Roots");
+        pdfName.add("Direct & Inverse Variation");
+        pdfName.add("Exponents & Powers eight");
+        pdfName.add("Factorisation");
+        pdfName.add("Linear Equations");
+        pdfName.add("Mensuration");
+        pdfName.add("Percentage & Its Applications");
+        pdfName.add("Profit & Loss");
+        pdfName.add("Quadrilaterals");
+        pdfName.add("Rational Numbers level four");
+        pdfName.add("Rational Numbers level one");
+        pdfName.add("Rational Numbers level three");
+        pdfName.add("Rational Numbers level two");
+        pdfName.add("Square and Square Roots");
         listViewAdapter = new ListViewAdapter(getApplicationContext(), pdfName);
         pdfListView.setAdapter(listViewAdapter);
         pdfListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
                 String name = pdfName.get(position);
-                Intent intent = new Intent(getApplicationContext(), PDFopenerp7.class);
+                Intent intent = new Intent(getApplicationContext(), PDFopenerp8.class);
                 intent.putExtra("pdf", name);
                 startActivity(intent);
             }
         });
+
+
     }
 }

@@ -13,23 +13,17 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.thetuition.R;
 import com.example.thetuition.practicepap7;
+import com.example.thetuition.practicepap8;
 
 public class SlideshowFragment extends Fragment {
     Button class7;
-
-
-
-
+    Button class8;
 
     private SlideshowViewModel slideshowViewModel;
-
-
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
+        public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         slideshowViewModel =
                 ViewModelProviders.of(this).get(SlideshowViewModel.class);
@@ -46,10 +40,6 @@ public class SlideshowFragment extends Fragment {
         return root;
 
     }
-
-
-
-
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         class7 = view.findViewById(R.id.class7);
@@ -59,16 +49,14 @@ public class SlideshowFragment extends Fragment {
                 startActivity(new Intent(getActivity(), practicepap7.class));
             }
         });
-
-
-
-        view.findViewById(R.id.class8).setOnClickListener(new View.OnClickListener() {
+        class8 = view.findViewById(R.id.class8);
+        class8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SlideshowFragment.this)
-                        .navigate(R.id.action_nav_slideshow_to_practce8);
+                startActivity(new Intent(getActivity(), practicepap8.class));
             }
         });
+
     }
 
 }
